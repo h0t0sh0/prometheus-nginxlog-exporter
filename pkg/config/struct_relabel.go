@@ -24,6 +24,7 @@ type RelabelConfig struct {
 type RelabelValueMatch struct {
 	RegexpString string `hcl:",key" yaml:"regexp"`
 	Replacement  string `hcl:"replacement"`
+	DefaultValue string `hcl:"default"`
 
 	CompiledRegexp *regexp.Regexp
 }
